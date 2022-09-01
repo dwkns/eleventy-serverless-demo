@@ -1,0 +1,14 @@
+[
+  {
+    "name": "post1",
+    "content": "Content for Post 1"
+  },
+  {
+    "name": "post2",
+    "content": "Content for Post 2"
+  },
+  {
+    "name": "post3",
+    "content": "Content for Post 3"
+  }
+]

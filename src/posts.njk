@@ -1,0 +1,15 @@
+---
+layout: _page-skeleton.njk
+pagination:
+  data: posts
+  alias: post
+  size: 1
+  # serverless: eleventy.serverless.path.id
+  # addAllPagesToCollections: true
+permalink:
+  build: "/posts/{{ post.name | slug }}/"
+  preview: "/preview/posts/:id"
+---
+<h1>Hello from: {{post.name}}</h1>
+<p>{{post.content}}</p>
+
