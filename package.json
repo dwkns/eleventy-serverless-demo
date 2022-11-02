@@ -1,15 +1,19 @@
 {
-  "name": "eleventy-serverless-issue",
+  "name": "site",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "npx @11ty/eleventy --serve"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "1.0.2"
+    "@11ty/eleventy": "2.0.0-canary.16",
+    "dwkns-eleventy-plugins": "^0.0.22"
+  },
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "dependencies": {
+    "@sanity/block-content-to-html": "^2.0.0",
+    "@sanity/client": "^3.4.1",
+    "dotenv": "^16.0.3"
   }
 }

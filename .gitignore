@@ -1,7 +1,6 @@
-node_modules
-_site
-# Local Netlify folder
-.netlify
-
+.gitignore
+/node_modules
+/dist
+.env
 netlify
-netlify.toml
+.netlify

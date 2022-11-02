@@ -1,0 +1,44 @@
+<style>
+  .nav {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    padding: 5px;
+  }
+      .banner {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+</style>
+
+<ul class="nav">
+  <li >Build:</li>
+  <li>
+    <a href="/">home</a>
+  </li>
+  {%- for slug, postData in posts -%}
+    <li>
+      <a href="/{{ postData.slug }}/">{{ postData.title }}</a>
+    </li>
+  {%- endfor -%}
+</ul>
+
+<ul class="nav">
+  <li>Preview:</li>
+  <li>
+    <a href="/preview/">home</a>
+  </li>
+  {%- for slug, postData in posts -%}
+    <li>
+      <a href="/preview/{{ postData.slug }}/">{{ postData.title }}</a>
+    </li>
+  {%- endfor -%}
+</ul>
+
+{%- if eleventy.serverless -%}
+  <div class="banner" style="background-color: rgb(245 158 11);">SERVERLESS</div>
+{%- else -%}
+  <div class="banner" style="background-color: rgb(56 189 248);">NOT SERVERLESS</div>
+{%- endif -%}
